@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>M1-Second class</title>
+</head>
+<body>
+    <h2>Image tag</h2>
+    <img src="./demoimg.jpg" alt="it's a demo image" width="500px">   <!--src=path , alt= description -->
+    <br>
+    <h2>List tag</h2>
+
+    <!--  ordered list -->
+    <ol>    
+        <li>Maryam</li>
+        <li>Munawar</li>
+    </ol>
+
+     <!-- unordered list -->
+    <ul>  
+        <li>Maryam</li>
+        <li>Munawar</li>
+    </ul>
+    <h2>Table tag</h2>
+
+            <!-- table tag -->
+    
+    <table border="1">
+        <thead>    <!--table head  i.e., Name,Phone,Email-->
+            <tr>    <!--table row-->
+                <th>Name</th> 
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Full Name</th>
+
+            </tr>
+
+        </thead>   
+        <tbody>   <!--table body-->
+            <tr>  
+                <td>Maryam</td>  <!--table data-->
+                <td>03156043065</td>
+                <td>itx.maryam172@gmail.com</td>
+                <td>Maryam MUnawar</td>
+            </tr>
+        </tbody>   
+    </table> 
+    <br>
+    <h2>Form tag</h2>
+
+                         <!-- Form Tag -->
+    <form>
+        <label for="text">Username</label>
+        <input   id="text"  name="text" placeholder="Enter text here"    type="text"/>
+
+        <label for="email">Email</label>
+        <input   id="email"  name="email" placeholder="Enter text here"   type="email"/>
+
+        <label for="password">Password</label>
+        <input   id="password"  name="password"  placeholder="Enter text here"   type="password"/>
+
+        <label for="Phone">Phone</label>
+        <input   id="Phone"  name="Phone"  placeholder="Enter text here"    type="phone"/>
+
+        <label for="text">Number</label>
+        <input   id="text"  name="text"  placeholder="Enter number here"    type="number"/>
+        <br>
+        <br>
+        <label for="Date">Date:</label>
+        <input   id="date"  name="date"  placeholder="Select Date"  type="date"/>
+
+
+        <label for="text">Gender:</label>
+        <input   id="Gender"  name="Gender" placeholder="Enter text here"/>
+
+        <label for="yes">Male</label>
+        <input   id="yes"  name="yesno"  placeholder="Enter text here"    type="radio"/>  <!--if name is same then we can select only one-->
+
+        <label for="no">Female</label>
+        <input   id="no"  name="yesnoooo"  placeholder="Enter text here"    type="radio"/>  <!--it will select both bcz of name difference--> 
+        <br>
+        <br>
+
+        <label for="file">File:</label>
+        <input   id="text"  name="text"  placeholder="choose file"  type="file"/>
+        <br>
+
+        <label for="time">Time:</label>
+        <input   id="myTimeInput"  name="text"  placeholder="Clock"  type="time"/>
+        <br>
+
+        <label for="color">Color:</label>
+        <input   id="myColorInput"  name="colorChoice"  placeholder="Choose color"  type="color"/>
+        <br>
+
+        <label for="Range">Range:</label>
+        <input   id="myRangeInput"  name="rangeValue"  placeholder="Select value from 0 to 100 "  type="range"/>
+        <br>
+
+        <label for="reset">Reset:</label>
+        <input   id="myResetButton"  name="resetButton"  placeholder="Click to reset form"  type="reset"/>
+        <br>
+    </form>
+    <br>
+    <br>
+    <h2>Select tag</h2>
+
+       <!-- Select tag -->
+
+       <select multiple>    <!--it is not manadatory to put multiple-->
+
+        <option value="one">1</option>
+        <option value="two">2</option>
+        <option value="three">3</option>
+        <option value="four">4</option>
+        <option value="five">5</option>
+
+       </select>
+</body>
+</html>
