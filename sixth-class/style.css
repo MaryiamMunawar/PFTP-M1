@@ -1,0 +1,23 @@
+
+ body{
+    margin: 0;
+} 
+.parent{
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    position: absolute;     /*every element has top left side position by default */
+    right: 0;
+    margin-bottom:5px;   
+}
+/* absolute position */
+.parent2{
+    background-color: brown;
+    width: 500px;
+    height: 500px;
+    z-index:1;
+    position: absolute;
+    top: 500px;
+}
+
+   

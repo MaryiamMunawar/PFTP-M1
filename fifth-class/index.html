@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title> 
+    <style>
+        
+        #bgContainer{
+            /* background-color: aqua; */   /*div is a block-element,block elements take full width but no height*/
+
+            height: 50vh;     /* vh=viewport height: "It is a unit of measurement used to set the height of an element relative to the height of the viewport (the visible area of the web page)." */
+            width: 100wh;
+            background-image: url(https://www.lunapic.com/editor/premade/transparent.gif);  
+
+            background-repeat: no-repeat;  /*image was repeating*/
+            background-color:grey;
+            /* image can be repeated on axis (x,y,z) */
+            /* background-repeat: repeat-y;  */
+            background-size: cover; /* The cover value is useful when you want to make sure the background image scales to fill the entire background of an element, regardless of its dimensions or aspect ratio. */
+            /* (damaged pixels ) SO,*/
+            /* background-size: contain; Property used to control the sizing behavior of a background image applied to an element. */
+            /*background-size: 600px  400px; /*(width,height)*/
+            background-position:center;
+
+        }
+        body{
+            margin: 0;  /*due to 0 margin there will be no scroll on webpage */
+        }       
+
+    </style>
+</head>
+<body>
+    <!-- Background -->
+    <div id="bgContainer">
+        <h1>Hello, Background Image</h1>
+        <p>This is an example of setting a background image for a div using its ID in CSS.</p>
+      </div>
+
+
+</body>
+</html>
