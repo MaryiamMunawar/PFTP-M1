@@ -99,6 +99,24 @@
         <label for="reset">Reset:</label>
         <input   id="myResetButton"  name="resetButton"  placeholder="Click to reset form"  type="reset"/>
         <br>
+        <input type="hidden" name="user_id" value="12345">
+        <br>
+        <label for="website">Website URL:</label>
+        <input type="url" id="website" name="website" required placeholder="https://www.vu.edu.pk">
+        <br>
+        <label for="searchQuery">Search:</label>
+        <input type="search" id="searchQuery" name="q" placeholder="Enter your search query" required>
+        <br>
+        <label for="datetimeSelection">Select Date and Time:</label>
+        <input type="datetime-local" id="datetimeSelection" name="datetime" required>
+        <br>
+        <label for="weekSelection">Select a Week:</label>
+        <input type="week" id="weekSelection" name="week" required>
+        <br>
+
+
+        <label for="submit">Submit form</label>
+        <input type="submit" id="submit" value="submit"/>
     </form>
     <br>
     <br>
