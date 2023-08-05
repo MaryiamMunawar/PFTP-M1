@@ -1,0 +1,26 @@
+body{
+    margin:0;
+    height: 100vh;
+}
+.item{
+    background-color: yellow;
+    /* don't show until i give height bcz block element take full width but no height.So, */
+    height: 100px;
+    margin-bottom: 5px;
+}
+.inline{
+    background-color: chocolate;
+    height: 100px;
+    /* display: inline; */
+    display: inline-block;
+   /* Don't show bcz on inline element height=no and width=yes */
+    /* padding:5px; */
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+.block{
+    background-color: blue;
+    display: block;
+}

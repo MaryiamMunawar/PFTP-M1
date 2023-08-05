@@ -5,19 +5,20 @@
 .parent{
     width: 500px;
     height: 500px;
-    background-color: gray;
+    background-color: gray;  
     position: absolute;     /*every element has top left side position by default */
     right: 0;
     margin-bottom:5px;   
+    z-index: 2;
 }
 /* absolute position */
 .parent2{
     background-color: brown;
     width: 500px;
     height: 500px;
-    z-index:1;
+    z-index:1;    /* defines priority */
     position: absolute;
-    top: 500px;
+    top: 500px;  
 }
 
    
