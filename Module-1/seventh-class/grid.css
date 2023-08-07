@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    height: 100vh;
+    color: white;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   /*colums template and 1fr means aik chothai*/
+    grid-template-rows: 1fr 1fr 1fr ;
+}
+div{
+    background-color: crimson;
+    margin: 10px;
+}
+
+/* 1fr stands for "fractional unit" or "fraction". It's a flexible unit that divides the available space along the grid's axis.  */
+/* STEPS of code:
+1-give body margin ,height,color,font-size and then giv div a background color and margin and run the code.
+2-Now,give display grid to body and run the code.
+3-give grid columns template : three columns of equal width(1fr 1fr 1fr) and run the code
+4.give grid rows template as given to colums and run the code.

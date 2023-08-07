@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    height: 100vh;     
+    display: flex;  /*by default flex direction is x-axis */
+    color: white; /* if u want all the text content in body to appear white then give white color */
+    font-size: 35px;
+    flex-direction:row;
+    flex-wrap: wrap
+}
+div{
+    /* width: 400px;
+    height: 400px; */
+    background-color: brown;
+    margin:10px;
+    flex:1;
+    /* flex-grow:1; */
+    
+    /* flex works on axis either x or y (not z) */
+}
+
+/* In FLEX , there are mainly 4 directions :
+1-row
+2-column
+3-row reverse
+4-column reverse 
+NOTE: APPLY all the 4 directions in above body tag and check  (flex-direction)
+boxes become biger by commenting body (height:100vh)*/ 
+ /* The flex-wrap property controls how flex items are arranged within a flex container when they overflow the container's main axis. 
+  flex-nowrap: "This is the default value. It means that the flex items will all be forced to stay on a single line, even if they overflow the container".
+  flex-wrap : " With this value, the flex items will wrap onto multiple lines if they cannot fit in a single line. Items will stack vertically if there's not enough horizontal space. 
+                The wrapping behavior follows the order of the flex items as they appear in the source code." 
+                flex-*/
+/* flex-grow: Give always to childs and to control how flex items grow relative to one another inside a flex container. It allows you to define how much "extra" space should be distributed
+               among the flex items when there is free space available along the main axis. (keep your child spacing equal) */
+/* uncomment body height for column to check flex-grow and set flex-direction:column. Then check by removing flex-grow */
+
+/* flex-flow: "combines two separate properties: "flex-direction" and "flex-wrap". */
+/* flex = flex-grow + flex-shrink + flex-basis */
+/* check flex in row and column ,size is set accordingly,,,check by commenting flex */
+
+/* comment height and width of div and then check .ok now you want to it to set height automatically so so give flex to div */
