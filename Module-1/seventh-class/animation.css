@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-size: 35px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    background-color: black;
+    width: 100px;
+    position: relative;
+    display: flex;
+    transition:all 1s;
+}
+div:hover{
+    width: 150px;
+    /* transform:scale(2); */
+    /* transform: rotate(90deg); */
+    /* transform: skew(-40deg); */
+    transform: translate(50px);
+    color: blue;
+    width: 100px;
+    height: 50px;
+}
+
+/* gave width,height and color for transform translate property */

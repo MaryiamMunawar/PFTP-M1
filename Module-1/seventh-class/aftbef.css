@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-size: 35px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    background-color: black;
+    width: 100px;
+    position: relative;
+    display: flex;
+}
+
+div::after{
+    content: '';
+    position: absolute;
+    color: black;
+    height: 10px;
+    width: 100%;
+    top: 50%;
+    background-color: yellow;
+    align-self: center;
+    right: -100px;
+}
+
+
+div::before {
+    content: '';
+    position: absolute;
+    color: black;
+    height: 10px;
+    width: 100%;
+    top: 50%;
+    background-color: yellow;
+    align-self: center;
+    left: -100px;
+}
+
+/* STEPS:
+1.copied from grid.css and then give display:flex; and align-items:center and then justify content:center;
+2. give height and width to div of 100px 
+3.Now i want to put a line on the box on left and right side
+4.give div after and then before and then remove the height of div to see full content
+5.we wanted to draw line which is to be out of box .so we give position:relative to div to make it into its boundary.
+6.then give position:absolute to after and before and due to this the text become mixed 
+7.give right: -100px to make it out of box and then give color black so that i can appear
+8.then give left: -200px to before to make it out
+9.basically i wanted to draw line for that i dont need content so i remove the content.
+10.give height:10px and width:50% to div::after.its not appearing bcz i didn't give color so bg:yellow
+11.then i give top:50% so after line came down 50% from top
+12.give display:flex to div and align:self:center; to after  (align-self means put me to center)
+13.did -100px to -1px of after and before
+14.give right and left now -50 to both.NOW ,turn width of both 50% to 100%
+15.we had given -50px right and left due to this its half inside box so now give -100px to both 
+15.*/
+

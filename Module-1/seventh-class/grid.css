@@ -2,9 +2,9 @@ body{
     margin: 0;
     height: 100vh;
     color: white;
-    font-size: 25px;
+    font-size: 35px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;   /*colums template and 1fr means aik chothai*/
+    grid-template-columns: 1fr 1fr 1fr;   /*columns template and 1fr means aik chothai*/
     grid-template-rows: 1fr 1fr 1fr ;
 }
 div{
@@ -17,4 +17,39 @@ div{
 1-give body margin ,height,color,font-size and then giv div a background color and margin and run the code.
 2-Now,give display grid to body and run the code.
 3-give grid columns template : three columns of equal width(1fr 1fr 1fr) and run the code
-4.give grid rows template as given to colums and run the code.
+4.give grid rows template as given to colums and run the code.*/
+
+
+div:hover{
+    background-color: grey;
+}
+button:active{
+    background-color: blue;
+}
+
+.input-field:focus{
+    outline:none;
+    border-color: darkmagenta;
+    box-shadow: 0 0 5px;
+}
+
+@media screen  and (max-width:768px) {
+    body{
+        grid-template-columns: 1fr 1fr;
+        font-size: 25px;
+    }
+    
+}
+
+@media screen  and (max-width:425px) {
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        font-size: 15px;
+    }
+    
+}
+
+/* :after and :before pseudo-elements are used to insert content before or after an element's actual content, 
+without needing to modify the HTML structure. These pseudo-elements ar */
+
