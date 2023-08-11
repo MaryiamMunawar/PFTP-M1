@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions</title>
+</head>
+<body>
+    <script>
+        //if a > b then add,otherwise don't.
+        /*types of if:
+        1.inline if  (if , else)
+        2.if
+        3.if else
+        4.if else if else*/
+
+        function additions(a,b){
+            //if else:
+           /*if(a>b){
+                return a+b*a;
+
+            }
+            else{
+                return "a is smaller than b"
+
+            } */
+            //inline :
+         // return a>b ? a+b*a : "a is smaller than b";         /*? for condition true hony py kia hoga, and : for else*/
+
+         //if else if else:
+         if(a>=5 && a<=10){
+            return a+b;
+         }  else if(a > 10 && a < b ){
+            return a+b*a;
+         }  else {
+            return "value of a is not valid";
+         }
+       } 
+       console.log(additions(4,6));
+       console.log(additions(10,5));
+       console.log(additions(10,20));
+       console.log(additions(20,30));
+    </script>
+     
+
+</body>
+</html>

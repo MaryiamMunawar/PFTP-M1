@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    
+    <script>
+        // we use switch when we have to match multiple values with single value. (case hoty, case 1 ki value 5 hai)
+        function additions(a,b){
+            switch(a){
+                case 5:
+                  return a + b;
+                  break;
+                case 10:
+                  return a * a * a * a;
+                  //default means if any case is not running then default wla case run krdo
+                default:
+                    return 'Invalid value';
+
+            }
+        }
+        console.log(additions(5,10));
+        console.log(additions(10,5));
+        console.log(additions(10,20));
+        console.log(additions(20,30));
+
+    </script>
+</body>
+</html>
