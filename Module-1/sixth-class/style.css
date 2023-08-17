@@ -13,12 +13,12 @@
 }
 /* absolute position */
 .parent2{
-    background-color: brown;
     width: 500px;
     height: 500px;
+    background-color: brown;
+    top: 500px;  
     z-index:1;    /* defines priority */
     position: absolute;
-    top: 500px;  
 }
 
    

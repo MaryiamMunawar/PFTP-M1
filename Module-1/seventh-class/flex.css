@@ -12,8 +12,8 @@ div{
     height: 400px; */
     background-color: brown;
     margin:10px;
-    flex:1;
-    /* flex-grow:1; */
+    flex:1; 
+    /* flex-grow:1; 
     
     /* flex works on axis either x or y (not z) */
 }

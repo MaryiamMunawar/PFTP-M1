@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script src="./array.js"></script>
+    <script>
+        const arr=[];
+      for(let i=0;i<10;i++){
+        const person1 = new /*Person*/Department(/*"Maryam Munawar",*/i+1,"itx.maryam172@gmail.com","Computer Science");
+        person1.setPhoneNumber(+923446251670);
+        // console.log(i ,person1);
+        // arr.push(item) is a method used to add an element (item) to the end of an array (arr).
+        arr.push(person1);
+      }
+        //console.table(item) It takes an array or an object as an argument and presents the data in a table format.
+      console.log('qwqer',arr[5].getDetails());
+      console.table(arr);
+      arr.pop();  //to remove the last element from an array and return that removed element. 
+      console.table('shbj',arr);
+    </script>
+</body>
+</html>

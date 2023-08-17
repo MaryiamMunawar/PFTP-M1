@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script src="./array.js"></script>
+    <script>
+        const arr=[];
+        for(let i=0;i<10;i++){
+            const Person1 = {
+                name : i,
+                email : "itx.maryam172@gmail.com",
+                phone : 923446251670,
+                getDetails : ()=> {
+                    return `Hey i am a function .do you have me?`
+                },
+            };
+            arr.push(Person1);
+        }
+        console.table(arr);
+        arr.pop();
+        console.table(arr);
+
+    </script>
+</body>
+</html>
