@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj={
+            name : 'Maryam',
+            age : 18,
+            gender : 'Female',
+            getReport : ()=>{
+                return 'how are you'
+            }
+        };
+
+        const obj2={
+            name : 'Maryam Munawar',
+            age : 18,
+            gender : 'Female',
+            getReport : ()=>{
+                return 'how are you'
+            }
+        };
+       
+        console.log(
+            obj,
+            obj2
+            );            
+
+        // ab apny value add krni hai tou :
+
+        //obj.dob= '15/06/2005';
+        //another way to add (in which i can give space b/w words):
+
+        obj["date of birth"] = '15/06/2005'
+
+        // to remove something from object we use :
+        
+        delete obj.name;
+        
+ 
+        
+        console.log(obj.getReport());
+        console.log(obj["date of birth"]);
+
+
+    </script>
+</body>
+</html>
+<!-- created obj2 and then i want to convert both obj into one object but it will not happen if the keys are same -->

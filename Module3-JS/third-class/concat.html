@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj={
+            name : 'Maryam',
+            age : 18,
+            gender : 'Female',
+            getReport : ()=>{
+                return 'how are you'
+            }
+        };
+
+        const obj2={
+            name : 'Maryam Munawar',
+            cast: 'abcd'
+
+            };
+       
+        const finalobj= {
+            ...obj,
+            ...obj2
+        }
+        //keys
+        Object.keys(finalobj).forEach((i)=>{
+            console.log(i);
+        });
+
+       // console.log(finalobj);   
+
+        //values
+    
+        Object.values(finalobj).forEach((i)=>{
+            console.log(i);
+        });
+
+        //typeof
+
+        Object.values(finalobj).forEach((i)=>{
+            if(typeof i==="function"){
+            console.log(i());
+            }else{
+                console.log(i);
+            }
+        });
+
+        
+        //console.log(finalobj);     
+
+       
+
+    </script>
+</body>
+</html>
+<!-- used ...  to get the values of objects
+     Object.keys make an array of your all the object keys like name,age,gender etc.
+     Object.values make an array of all the object values like Maryam,18,female.
+     typeof tells the type of your object.
+     wanted to run the getReport function
+
+-->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myPersonalList=[];
+         myPersonalList.push([5,5,5,5,5,4,5,5]);
+         myPersonalList.push([4,5,4,5,5,4,5,5]);
+         //myPersonalList.push(410); comment it to check .every
+         myPersonalList.push([2,5,5,5,5,4,5,5]);
+         myPersonalList.push([1,5,5,5,5,4,5,5]);
+         myPersonalList.push([6,5,4,5,5,4,5,5]);
+         myPersonalList.push([7,5,5,5,5,4,5,5]);
+
+         console.table(myPersonalList.indexOf(410));
+         //findIndex needs a callback function
+         //console.table(myPersonalList.findIndex((i)=> i===410));
+         console.table(myPersonalList.findIndex((i) => i[0] ===6))
+         //includes check if the value is present in an array or not
+         console.table(myPersonalList.includes(410));
+
+         //  a || B|| C|| D
+         //every a && B && C && D
+         console.table(myPersonalList.some((i)=> i[0]===5));
+         console.table(myPersonalList.every((i)=> i[5]===5));
+         //filter 
+         console.table(myPersonalList.filter((i)=> i[2]===4));
+         const array = myPersonalList.find((i)=> i[2]===4);
+         console.table(array);
+
+
+
+
+
+    </script>   
+</body>
+</html>

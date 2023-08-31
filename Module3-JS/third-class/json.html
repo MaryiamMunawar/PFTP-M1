@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON </title>
+</head>
+<body>
+    <script>
+        const obj={
+            name : 'Maryam',
+            age : 18,
+            gender : 'Female',
+            getReport : ()=>{
+                return 'how are you'
+            }
+        };
+
+        const obj2={
+            name : 'Maryam Munawar',
+            cast: 'abcd'
+
+            };
+       
+        const finalobj= {
+            ...obj,
+            ...obj2
+        };
+        console.log(JSON.stringify(finalobj));
+        
+
+        const json = (JSON.stringify(finalobj));
+        const tempObj = JSON.parse(json);
+        console.log(tempObj);
+  
+
+       
+
+    </script>
+</body>
+</html>
+<!--  JSON : to convert object into string (bcz i wanted to send ) JSON.stringify
+      again i want to convert the string into object so i use parse
+->

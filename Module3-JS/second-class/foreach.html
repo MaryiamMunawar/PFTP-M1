@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach Loop</title>
+</head>
+<body>
+    <script>
+
+        const myPersonalList=[1,2,3,4];
+        myPersonalList.forEach((i)=>{
+            console.log(i /* *2 */);
+        })
+         //forEach loop :return type void by default
+         const myPersnalList=[];
+         myPersnalList.push([5,5,5,5,5,4,5,5]);
+         myPersnalList.push([4,5,5,5,5,4,5,5]);
+         myPersnalList.push(410);
+         myPersnalList.push([2,5,5,5,5,4,5,5]);
+         myPersnalList.push([1,5,5,5,5,4,5,5]);
+         myPersnalList.push([6,5,5,5,5,4,5,5]);
+         myPersnalList.push([7,5,5,5,5,4,5,5]);
+         console.table(myPersnalList);
+         myPersnalList.forEach((i) =>{
+            if(Array.isArray(i)) {
+                i.forEach((i) => {
+                    console.log("i:",i);
+                });
+                }else{
+                    console.log("i3",i);
+                }
+            });
+            //for in loop :provides index jitni length hoti hai utna index.
+            const myInList=[1,2,3,4,5];
+            console.table(myInList);
+            for(item in myInList){
+                // console.log('in',item);
+                console.log(myInList[item]);
+
+            }
+    </script>
+</body>
+</html>

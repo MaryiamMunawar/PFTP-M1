@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS IN ARRAYS</title>
+</head>
+<body>
+    <!--loops to display values
+         /* 
+         for
+         foreach
+         for in
+         for of
+         map
+    -->
+    <script>
+        //for loop
+        const myPersonalList=[];
+         myPersonalList.push([5,5,5,5,5,4,5,5]);
+         myPersonalList.push([4,5,5,5,5,4,5,5]);
+         myPersonalList.push([3,5,5,5,5,4,5,5]);
+         myPersonalList.push([2,5,5,5,5,4,5,5]);
+         myPersonalList.push([1,5,5,5,5,4,5,5]);
+         myPersonalList.push([6,5,5,5,5,4,5,5]);
+         myPersonalList.push([7,5,5,5,5,4,5,5]);
+         
+        for(i=0 ; i< myPersonalList.length; i++){
+            console.log(myPersonalList[i][i]);
+             // hua ye k i=0 so 0 row(1st row) k 0 column(1st col) ki value
+             //phir i=1 hua so 1 index row(2nd row) l 1 index column (2nd col)ki value .similarly continue so output will be 5 times 5, 4 and 5
+        }
+            
+        //now ,i will remove 2 column and rows will be same and col will be 6.
+        const myList=[];
+         myList.push([5,5,5,5,5,4]);
+         myList.push([4,5,5,5,5,4]);
+         myList.push([3,5,5,5,5,4]);
+         myList.push([2,5,5,5,5,4]);
+         myList.push([1,5,5,5,5,4]);
+         myList.push([6,5,5,5,5,4]);
+         myList.push([7,5,5,5,5,4]);
+
+         for(i=0 ; i< myList.length; i++){
+            console.log(myList[i][i]);  //undefine come due to (i<7 tk chlna tha and yhn row to 7 hn mgr col 6 hn)
+         }
+
+         //nested loop:loops that are placed inside another loop.Used when you need to perform repetitive tasks that involve multiple levels of iteration. 
+         
+        const myActualList=[];
+        myActualList.push([5,5,5,5,5,4,5,5]);
+        myActualList.push([4,5,5,5,5,4,5,5]);
+        myActualList.push([3,5,5,5,5,4,5,5]);
+        myActualList.push([2,5,5,5,5,4,5,5]);
+        myActualList.push([1,5,5,5,5,4,5,5]);
+        myActualList.push([6,5,5,5,5,4,5,5]);
+        myActualList.push([7,5,5,5,5,4,5,5]);
+         console.table(myActualList);
+         for(i=0 ; i< myActualList.length; i++){
+            for(y=0 ; y<myActualList[i].length ;y++){
+            //    console.log(myActualList[i][y]);
+            console.log('qwer',i,y);
+            }
+
+            //for in loop
+            const myInList=[1,2,3,4,5];
+            console.table(myInList);
+            for(item in myInList){
+                console.log('in',item);
+            }
+            // map : it's return type is Array by default.
+            console.log(myPersonallList);
+            console.log(myPersonalList.map((i) =>{
+                console.log(i);
+                return i;
+            }))
+         }
+
+
+    </script>
+</body>
+</html>
